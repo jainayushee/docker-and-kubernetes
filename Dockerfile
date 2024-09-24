@@ -2,5 +2,5 @@
 # L2: copies everything from current folder to everything inside the specified folder
 
 FROM nginx:alpine
-COPY . /usr/share/nginx/html
+COPY index.html /usr/share/nginx/html
 
