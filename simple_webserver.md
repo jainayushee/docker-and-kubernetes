@@ -17,3 +17,6 @@ docker rm nginx
 *deletes associated image*
 
 ### Building containers using a Dockerfile
+
+docker build -t hello-world:v1 .
+docker run -d -p 8080:80 --name hello hello-world:v1
