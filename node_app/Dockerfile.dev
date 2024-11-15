@@ -1,0 +1,12 @@
+# Base image called node, has a pre-configured node and npm env; alpine is the version, lightweight
+FROM node:alpine
+# create a new dir inside the container
+WORKDIR /usr/src/app
+# copies all files from the local app to the working dir of the container
+COPY . .
+# run command in dir
+RUN npm install
+
+EXPOSE 3000
+# run after building the image
+CMD ["npm", "run", "dev"]
