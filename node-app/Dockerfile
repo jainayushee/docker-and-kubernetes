@@ -10,6 +10,6 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 80
 # run after building the image
 CMD ["npm", "run", "start"]

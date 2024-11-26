@@ -7,6 +7,6 @@ COPY . .
 # run command in dir
 RUN npm install
 
-EXPOSE 3000
+EXPOSE 80
 # run after building the image
 CMD ["npm", "run", "dev"]
